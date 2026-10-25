@@ -1,0 +1,58 @@
+{
+  "_info": "Negocios iniciales de la plataforma. Ejecuta: npm run seed:clients  (ver README). Puedes volver a correrlo: actualiza sin duplicar.",
+  "businesses": [
+    {
+      "slug": "power-washing",
+      "billing_exempt": true,
+      "name": "Power Washing Services LLC",
+      "owner_name": "José Mejía",
+      "owner_email": "powerwashingllcnc@gmail.com",
+      "address1": "907 James Street",
+      "address2": "Apex, NC 27502",
+      "phone": "919-337-7561",
+      "email": "powerwashingllcnc@gmail.com",
+      "website": "www.powerwashingllcnc.com",
+      "tagline": "Safe and Reliable",
+      "brand_color": "#1b3566",
+      "accent_color": "#1f9a9a",
+      "default_lang": "en",
+      "logo": "logos/power-washing.png",
+      "payment_text_en": "We accept cash or check payable to Power Washing Services LLC.",
+      "payment_text_es": "Aceptamos efectivo o cheque a nombre de Power Washing Services LLC.",
+      "services": [
+        ["House exterior washing", "Lavado exterior de vivienda", 0],
+        ["Driveway cleaning", "Limpieza de entrada vehicular", 0],
+        ["Roof soft washing", "Lavado suave de techo", 0],
+        ["Patio and sidewalk cleaning", "Limpieza de patio y aceras", 0],
+        ["Rust stain removal", "Eliminación de manchas de óxido", 0]
+      ]
+    },
+    {
+      "slug": "mejias-construction",
+      "billing_exempt": true,
+      "name": "Mejia's Construction",
+      "owner_name": "Javier Mejía",
+      "owner_email": "mejiasconstructionnc@gmail.com",
+      "address1": "307 Linwood St",
+      "address2": "Apex, NC",
+      "phone": "919-337-7561",
+      "email": "mejiasconstructionnc@gmail.com",
+      "website": "",
+      "tagline": "",
+      "brand_color": "#1f1f1f",
+      "accent_color": "#c8102e",
+      "default_lang": "en",
+      "logo": "logos/mejias-construction.png",
+      "payment_text_en": "We accept cash or check payable to Mejia's Construction.",
+      "payment_text_es": "Aceptamos efectivo o cheque a nombre de Mejia's Construction.",
+      "services": [
+        ["Wood rot repair", "Reparación de madera podrida", 0],
+        ["Siding replacement", "Reemplazo de fachada exterior", 0],
+        ["Decks replace and repair", "Reemplazo y reparación de decks", 0],
+        ["Roof repair", "Reparación de techos", 0],
+        ["Build fences (any style)", "Construir cercas (de cualquier estilo)", 0],
+        ["Painting and staining", "Pintura y barniz/teñido", 0]
+      ]
+    }
+  ]
+}
