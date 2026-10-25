@@ -33,7 +33,7 @@ Stripe Connect (pagos con tarjeta) · Stripe Billing (suscripción de cada negoc
 
 ### 1. Supabase
 1. Crea un proyecto en supabase.com (región `us-east`).
-2. Abre **SQL Editor** y ejecuta, en orden, `supabase/migrations/0001_init.sql` y `supabase/migrations/0002_billing.sql`.
+2. Abre **SQL Editor** y ejecuta, en orden, `0001_init.sql`, `0002_billing.sql` y `0003_hardening.sql` (carpeta `supabase/migrations`).
    (Con la CLI: `supabase link` y luego `supabase db push`.)
 3. **Authentication → Sign In / Providers**: deja Email activo y **desactiva "Allow new users to sign up"**
    (el registro de negocios pasa por `/signup`, que crea los usuarios desde el servidor; los miembros de equipo entran por invitación).
