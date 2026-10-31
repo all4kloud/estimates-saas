@@ -20,7 +20,7 @@ el proyecto tras una semana sin actividad).
 ## 1. Supabase
 
 1. Crea el proyecto (región `us-east-1`) y ejecuta en **SQL Editor**, en este orden:
-   `supabase/migrations/0001_init.sql` y luego `supabase/migrations/0002_billing.sql`.
+   `0001_init.sql`, luego `0002_billing.sql` y luego `0003_hardening.sql` (carpeta `supabase/migrations`).
 2. Configura Auth tal como dice el README (sección *Supabase*, pasos 3 a 7). Deja **apagado**
    "Allow new users to sign up": el registro de negocios pasa por `/signup`, que crea los
    usuarios desde el servidor. Deja **encendido** "Confirm email".
