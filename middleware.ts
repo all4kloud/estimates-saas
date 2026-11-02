@@ -20,9 +20,10 @@ export async function middleware(request: NextRequest) {
   const path = request.nextUrl.pathname;
 
   if (!user && !PUBLIC.some(r => r.test(path))) {
-    const url = request.nextUrl.clone();
-    url.pathname = '/login';
-    url.search = path !== '/' ? `?next=${encodeURIComponent(path + request.nextUrl.search)}` : '';
+    // URL pública (en Cloud Run el host de la petición interna puede ser 0.0.0.0:8080)
+    const base = (process.env.NEXT_PUBLIC_APP_URL || request.nextUrl.origin).replace(/\/$/, '');
+    const url = new URL('/login', base);
+    if (path !== '/') url.searchParams.set('next', path + request.nextUrl.search);
     return NextResponse.redirect(url);
   }
   return response;
